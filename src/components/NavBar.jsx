@@ -12,8 +12,9 @@ export function NavBar() {
       <nav>
         <div className="navbar-conatiner">
           <div className="nav-logo">
-           <MdDeveloperMode size={30}/>
-            Front-end Developer</div>
+            <MdDeveloperMode size={30} />
+            Front-end Developer
+          </div>
           <div className="nav-items-conatiner">
             <div className={btnClicked ? "nav-items clicked" : "nav-items"}>
               <Link to="home" smooth={true} duration={500}>
@@ -32,13 +33,14 @@ export function NavBar() {
                 <div>Contact</div>
               </Link>
             </div>
-
-            <div className={btnClicked ? "phone clicked" : "phone"}>
-              +91 8778604816
-              <div className="phone-icon">
-                <FaPhone />
+            <a href="tel:8778604816">
+              <div className={btnClicked ? "phone clicked" : "phone"}>
+                +91 8778604816
+                <div className="phone-icon">
+                  <FaPhone />
+                </div>
               </div>
-            </div>
+            </a>
             <div
               className="hamburger"
               onClick={() => setBtnClicked(!btnClicked)}

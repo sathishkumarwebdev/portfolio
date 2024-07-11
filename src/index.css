@@ -78,6 +78,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+a{
+  text-decoration: none;
+}
+
 header {
   position: sticky;
   top: 0;

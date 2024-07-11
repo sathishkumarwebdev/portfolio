@@ -3,7 +3,12 @@ import code from "../assets/images/coding.png";
 // import pic from "../assets/images/sathish.png"
 import { Element } from "react-scroll";
 // import wave from "../assets/images/wave.svg"
+
 export function Home() {
+  // const resumeDownload=()=>{
+
+  // }
+
   return (
     <Element name="home" className="home-container">
       <div className="personal-info-container">
@@ -15,12 +20,20 @@ export function Home() {
             <div className="personal-role">
               <h4>Front-end Developer</h4>
             </div>
-            <div className="resume-btn">
-              <span className="resume-txt"> Resume</span>
-              <div>
-                <MdFileDownload />
+            <a
+              href={require("../pdf/Sathishkumar_resume.pdf")}
+             
+             
+              download="sathishkumar-resume.pdf"
+              
+            >
+              <div className="resume-btn">
+                <span className="resume-txt"> Resume</span>
+                <div>
+                  <MdFileDownload />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -30,8 +43,6 @@ export function Home() {
           </div>
         </div>
       </div>
-
-   
     </Element>
   );
 }
