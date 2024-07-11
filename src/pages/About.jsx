@@ -1,5 +1,4 @@
 import { Element } from "react-scroll";
-import about from "../assets/images/about.png";
 import { FaGraduationCap } from "react-icons/fa";
 export function About() {
   return (

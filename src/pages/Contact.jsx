@@ -9,7 +9,7 @@ export function Contact() {
       </div>
       <div className="contact-center">
         <div className="first-last-name">
-          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="First Name"  />
           <input type="text" placeholder="Last Name" />
         </div>
         <div className="email">

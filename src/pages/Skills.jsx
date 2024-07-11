@@ -12,7 +12,6 @@ import ProgressBar from "@ramonak/react-progress-bar";
 export const Skills = () => {
   return (
     <Element name="skills" className="skills-conatiner">
-     
       <div className="skills-title">
         <h1>My Skills</h1>
       </div>
@@ -41,6 +40,7 @@ export const Skills = () => {
                 bgColor="blue"
                 animateOnRender="true"
                 initCompletedOnAnimation={0}
+                className="progress-bar"
               />
             </div>
             <div className="content">
@@ -54,6 +54,7 @@ export const Skills = () => {
                 bgColor="#f0db4f"
                 animateOnRender="true"
                 initCompletedOnAnimation={0}
+                className="progress-bar"
               />
             </div>
           </div>
@@ -68,6 +69,7 @@ export const Skills = () => {
                 bgColor="#61DBFB"
                 animateOnRender="true"
                 initCompletedOnAnimation={0}
+                className="progress-bar"
               />
             </div>
             <div className="content">
@@ -80,6 +82,7 @@ export const Skills = () => {
                 bgColor="#5382a1"
                 animateOnRender="true"
                 initCompletedOnAnimation={0}
+                className="progress-bar"
               />
             </div>
             <div className="content">
@@ -91,6 +94,7 @@ export const Skills = () => {
                 bgColor="#F1502F"
                 animateOnRender="true"
                 initCompletedOnAnimation={0}
+                className="progress-bar"
               />
             </div>
           </div>

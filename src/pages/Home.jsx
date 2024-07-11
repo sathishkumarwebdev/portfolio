@@ -1,8 +1,8 @@
 import { MdFileDownload } from "react-icons/md";
 import code from "../assets/images/coding.png";
-import pic from "../assets/images/sathish.png"
+// import pic from "../assets/images/sathish.png"
 import { Element } from "react-scroll";
-import wave from "../assets/images/wave.svg"
+// import wave from "../assets/images/wave.svg"
 export function Home() {
   return (
     <Element name="home" className="home-container">
