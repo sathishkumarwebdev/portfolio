@@ -1,13 +1,17 @@
 import { Element } from "react-scroll";
-import ecom from "../assets/images/flipkart-project.png";
+import ecom from "../assets/images/ecomm.gif";
 import xo from "../assets/images/xo.png";
 import xotitle from "../assets/images/xotitle.png";
 import flipkart from "../assets/images/Flipkart-Logo.png";
-import resume from "../assets/images/resume.png";
+import resume from "../assets/images/resume.gif";
+import job from "../assets/images/job.gif";
+import resumelogo from "../assets/images/resumebuilder-logo.png";
+import cclogo from "../assets/images/cc_logo.png";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { HiDocumentDuplicate } from "react-icons/hi2";
+import { FaSuitcase } from "react-icons/fa";
 export function Projects() {
   return (
     <Element className="projects-container" name="projects">
@@ -49,8 +53,65 @@ export function Projects() {
               UseReduce, and Axios.
             </p>
           </div>
-          <div>
+          <div className="link-projects">
             <a href="https://github.com/sathishkumarwebdev/React-Flipkart-Ecommerce-Web">
+              <div className="link-btn">
+                <h4>Get Source</h4>{" "}
+                <FaArrowCircleRight size={32} className="arrow-link" />
+              </div>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://ecommerce-sathishkumar-cart.netlify.app">
+              <div className="link-btn">
+                <h4>Demo Link</h4>{" "}
+                <FaArrowCircleRight size={32} className="arrow-link" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project">
+        <div className="project-content">
+          <div className="project-content-title">
+            <HiDocumentDuplicate size={30} /> &nbsp; &nbsp;{" "}
+            <h1>Resume Buliding Website </h1>
+          </div>
+          <div className="project-content-title">
+            <img src={resumelogo} alt="flipkart" />
+            {/* <h1 style={{ color: "#d32de4" }}>Resume Builder</h1> */}
+          </div>
+          <div>
+            <p>
+              Created a Resume Builder application to help users effortlessly
+              craft professional resumes. The tool provides templates,
+              customization options, and export features to enhance the resume
+              creation process for job seekers.
+            </p>
+          </div>
+          <div>
+            <h3 style={{ color: "#d32de4" }}>Features</h3>
+            <p style={{ color: "#212529" }}>
+              Template Selection: Users can choose from various pre-designed
+              resume templates to suit different industries and styles. <br />
+              Player vs. Player Mode : Two players can play the game on the same
+              device. <br />
+              Customization Options: Allows users to personalize their resumes
+              with custom sections, fonts, colors, and layouts. <br />
+              Export Formats: Users can export their resumes in multiple
+              formats, including PDF and Word. <br />
+            </p>
+          </div>
+          <div>
+            <h3 style={{ color: "#d32de4" }}>Technologies Used</h3>
+            <p style={{ color: "#212529" }}>
+              Frontend: HTML, CSS, JavaScript, React <br />
+              Backend: Node.js, Express <br />
+              Database: MongoDB
+              <br />
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/sathishkumarwebdev/Resume-builder-react">
               <div className="link-btn">
                 <h4>Get Source</h4>{" "}
                 <FaArrowCircleRight size={32} className="arrow-link" />
@@ -58,7 +119,72 @@ export function Projects() {
             </a>
           </div>
         </div>
+        <div className="project-image">
+          <img src={resume} alt="resume maker" />
+        </div>
       </div>
+      <div className="project">
+        <div className="project-image">
+          <img src={job} alt="job seraching website" />
+        </div>
+        <div className="project-content">
+          <div className="project-content-title">
+            <FaSuitcase size={30} />
+            &nbsp;&nbsp;&nbsp;
+            <h1>Job searching portal</h1>
+          </div>
+
+          <div>
+            <img src={cclogo} alt="flipkart" height={100} />
+          </div>
+          <div>
+            <p>
+              Developed a comprehensive Job Search Portal designed to connect
+              job seekers with top employers across various industries. The
+              portal features advanced search functionalities, personalized job
+              alerts.
+            </p>
+          </div>
+          <div>
+            <h3 style={{ color: "#d32de4" }}>Features</h3>
+            <p style={{ color: "#212529" }}>
+              <b>Advanced Search Filters:</b> Allows users to search for jobs
+              based on various criteria such as role, location, industry, and
+              company. Personalized <br />
+              <b>Job Alerts:</b> Sends notifications to users about new job
+              listings that match their search criteria. Company Profiles:
+              Provides detailed profiles for companies, including job openings,
+              company culture, and employee reviews. <br />
+              <b>Job Alerts:</b> Application Tracking: Users can track the
+              status of their job applications and receive updates. <br />
+            </p>
+          </div>
+          <div>
+            <h3 style={{ color: "#d32de4" }}>Technologies Used</h3>
+            <p style={{ color: "#212529" }}>
+              Frontend: HTML, CSS, JavaScript, React <br />
+              Backend: Node.js, Express <br />
+              Database: MongoDB <br />
+            </p>
+          </div>
+          <div className="link-projects">
+            <a href="https://github.com/sathishkumarwebdev/careerconnect">
+              <div className="link-btn">
+                <h4>Get Source</h4>{" "}
+                <FaArrowCircleRight size={32} className="arrow-link" />
+              </div>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://careerconnect-job.netlify.app/">
+              <div className="link-btn">
+                <h4>Demo Link</h4>{" "}
+                <FaArrowCircleRight size={32} className="arrow-link" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="project">
         <div className="project-content">
           <div className="project-content-title">
@@ -108,17 +234,6 @@ export function Projects() {
         </div>
         <div className="project-image">
           <img src={xo} alt="" height={400} />
-        </div>
-      </div>
-      <div className="project">
-        <div className="project-image">
-          <img src={resume} alt="" />
-        </div>
-        <div className="project-content">
-          <div className="project-content-title">
-            <HiDocumentDuplicate size={30} /> &nbsp; &nbsp;{" "}
-            <h1>Resume Builder</h1>
-          </div>
         </div>
       </div>
     </Element>
