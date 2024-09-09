@@ -3,8 +3,6 @@ import code from "../assets/images/coding.png";
 // import pic from "../assets/images/sathish.png"
 import { Element } from "react-scroll";
 import "animate.css/animate.compat.css";
-import ScrollAnimation from "react-animate-on-scroll";
-// import wave from "../assets/images/wave.svg"
 
 export function Home() {
   // const resumeDownload=()=>{
