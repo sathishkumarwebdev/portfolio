@@ -20,7 +20,7 @@ export function Home() {
             <div className="personal-name">I'm Sathishkumar M</div>
 
             <div className="personal-role">
-              <h4>Front-end Developer</h4>
+              <h4>Full stack Developer</h4>
             </div>
             <a
               href={require("../pdf/sathishkumar_fullstack_resume.pdf")}

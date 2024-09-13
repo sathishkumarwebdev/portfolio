@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -6,14 +6,14 @@ import { RxCross1 } from "react-icons/rx";
 import { MdDeveloperMode } from "react-icons/md";
 
 export function NavBar() {
-  const [btnClicked,setBtnClicked]=useState(false)
+  const [btnClicked, setBtnClicked] = useState(false);
   return (
     <header>
       <nav>
         <div className="navbar-conatiner">
           <div className="nav-logo">
             <MdDeveloperMode size={30} />
-            Front-end Developer
+            Full stack Developer
           </div>
           <div className="nav-items-conatiner">
             <div className={btnClicked ? "nav-items clicked" : "nav-items"}>
