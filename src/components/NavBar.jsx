@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,15 +7,37 @@ import { MdDeveloperMode } from "react-icons/md";
 
 export function NavBar() {
   const [btnClicked, setBtnClicked] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    const backgroundChange = () => {
+      if (window.scrollY <= 100) {
+        setNavbar(false);
+      } else {
+        setNavbar(true);
+      }
+    };
+
+    window.addEventListener("scroll", backgroundChange);
+
+    return () => {
+      window.removeEventListener("scroll", backgroundChange);
+    };
+  }, []);
+
   return (
     <header>
       <nav>
-        <div className="navbar-conatiner">
+        <div
+          className={
+            navbar ? "navbar-container nav-container-bg" : "navbar-container"
+          }
+        >
           <div className="nav-logo">
             <MdDeveloperMode size={30} />
-            Full stack Developer
+            Full Stack Developer
           </div>
-          <div className="nav-items-conatiner">
+          <div className="nav-items-container">
             <div className={btnClicked ? "nav-items clicked" : "nav-items"}>
               <Link to="home" smooth={true} duration={500}>
                 <div>Home</div>
@@ -33,9 +55,9 @@ export function NavBar() {
                 <div>Contact</div>
               </Link>
             </div>
-            <a href="tel:8778604816">
+            <a href="tel:9944252121">
               <div className={btnClicked ? "phone clicked" : "phone"}>
-                +91 8778604816
+                +91 9944252121
                 <div className="phone-icon">
                   <FaPhone />
                 </div>

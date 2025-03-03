@@ -33,7 +33,7 @@ export function About() {
               <h3>Phone No:</h3>
             </div>
             <div className="profile-data">
-              <h3>8778604816</h3>
+              <h3>9944252121</h3>
             </div>
           </div>
           <div className="profile-info">
