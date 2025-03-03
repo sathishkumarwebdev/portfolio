@@ -74,7 +74,7 @@ export function Projects() {
         <div className="project-content">
           <div className="project-content-title">
             <HiDocumentDuplicate size={30} /> &nbsp; &nbsp;{" "}
-            <h1>Resume making website</h1>
+            <h1 id="resume-h1">Resume making website</h1>
           </div>
           <div className="project-content-title">
             <img src={resumelogo} alt="flipkart" />
@@ -93,7 +93,6 @@ export function Projects() {
             <p style={{ color: "#212529" }}>
               Template Selection: Users can choose from various pre-designed
               resume templates to suit different industries and styles. <br />
-             
               Customization Options: Allows users to personalize their resumes
               with custom sections, fonts, colors, and layouts. <br />
               Export Formats: Users can export their resumes in multiple

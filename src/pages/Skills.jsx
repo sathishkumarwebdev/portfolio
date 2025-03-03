@@ -3,22 +3,19 @@ import { Element } from "react-scroll";
 import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
-import { FaJava, FaGitAlt } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa6";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
-import ProgressBar from "@ramonak/react-progress-bar";
-import { useInView } from "react-intersection-observer";
+
+
 
 export const Skills = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Animation triggers only once
-    threshold: 0.3, // Triggers when 30% of the component is visible
-  });
+  
 
   return (
     <Element name="skills" className="skills-container">
-      <div ref={ref} className="skills-wrapper">
+      <div  className="skills-wrapper">
         <div className="skills-title">
           <h1>My Skills</h1>
         </div>
